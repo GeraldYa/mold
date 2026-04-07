@@ -171,7 +171,9 @@ We host it for you. Just send the output.
 
 ```
 mold/
-├── mold.js                          # Rendering engine (55KB)
+├── mold-core.js                     # Core engine (27KB)
+├── themes/
+│   └── golden-hour.theme.js         # Golden Hour theme plugin (43KB)
 ├── SPEC.md                          # Schema specification
 ├── API-DOCS.md                      # Human-readable API docs
 ├── API-AI.md                        # AI-optimized API docs
@@ -179,6 +181,16 @@ mold/
 ├── example-portfolio.mold.json      # Complete example page
 └── README.md
 ```
+
+### Architecture
+
+```
+mold-core.js (engine)     ←  Theme-independent: parsing, DOM, animation, i18n, lightbox
+     ↓
+themes/*.theme.js (plugin) ←  Self-registering: CSS, colors, layouts, section renderers
+```
+
+To create a new theme, write a `your-theme.theme.js` that calls `Mold.registerTheme()` and `Mold.registerSection()`. No changes to core needed.
 
 ---
 
