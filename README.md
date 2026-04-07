@@ -171,7 +171,7 @@ We host it for you. Just send the output.
 
 ```
 mold/
-├── mold-core.js                     # Core engine (27KB)
+├── — Core engine served from moldpage.dev (closed source)
 ├── themes/
 │   └── golden-hour.theme.js         # Golden Hour theme plugin (43KB)
 ├── SPEC.md                          # Schema specification

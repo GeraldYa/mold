@@ -61,7 +61,7 @@ Then output a COMPLETE HTML file. Use EXACTLY this template — only replace the
 </head>
 <body>
 <div id="mold-root"></div>
-<script src="https://cdn.jsdelivr.net/gh/GeraldYa/mold@main/mold-core.js"></script>
+<script src="https://moldpage.dev/engine/mold-core.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/GeraldYa/mold@main/themes/golden-hour.theme.js"></script>
 <script>
 const page = {
