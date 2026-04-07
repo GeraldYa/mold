@@ -1,0 +1,228 @@
+{
+  "mold": "0.1",
+  "page": {
+    "id": "portfolio",
+    "title": "Gerald Yang — Builder",
+    "description": "AI Solutions Builder. Full-stack developer shipping multi-agent AI systems, trading dashboards, and production infrastructure.",
+    "lang": "en",
+    "favicon": "favicon.svg"
+  },
+  "theme": {
+    "mood": "golden-hour",
+    "accent": "amber",
+    "fonts": {
+      "display": "Outfit",
+      "body": "Outfit",
+      "mono": "JetBrains Mono"
+    }
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "id": "intro",
+      "name": "Gerald Yang",
+      "tagline": "Builder. Communicator. Maker.",
+      "links": [
+        { "label": "GitHub", "url": "https://github.com/GeraldYa" },
+        { "label": "LinkedIn", "url": "https://www.linkedin.com/in/gerald-yang-ai" },
+        { "label": "MakerWorld", "url": "https://makerworld.com/@GeraldWorkShop" },
+        { "label": "Email", "url": "mailto:gerald6331@gmail.com" }
+      ],
+      "cta": { "label": "Download Resume", "url": "Gerald-Yang-Resume-2026.pdf", "style": "primary" }
+    },
+    {
+      "type": "stats",
+      "id": "numbers",
+      "items": [
+        { "value": "7+", "label": "Production Services" },
+        { "value": "5", "label": "AI Agents Deployed" },
+        { "value": "10+", "label": "Years in Tech" },
+        { "value": "9+", "label": "Years Client-Facing" }
+      ],
+      "animate": true
+    },
+    {
+      "type": "timeline",
+      "id": "story",
+      "heading": "My Story",
+      "entries": [
+        { "year": "2015", "text": "Small computer shop. Fixed machines, sold tech, learned people." },
+        { "year": "2018", "text": "Store Manager. Revenue up 100%+. Ran P&L, coached teams, managed vendors." },
+        { "year": "2022", "text": "Geek Squad field tech by day. 3D printing maker by night. 800+ downloads on MakerWorld." },
+        { "year": "2025", "text": "Self-taught code. 6 months from first line of code to 10 production services." },
+        { "year": "Now", "text": "10 production services shipped. A book published. Building an AI content operations platform. Looking for a team that values builders who communicate.", "pulse": true }
+      ]
+    },
+    {
+      "type": "cards",
+      "id": "projects",
+      "heading": "Projects",
+      "columns": 3,
+      "expandable": { "visible": 6, "label": "Show 4 more" },
+      "items": [
+        {
+          "title": "Multi-Agent AI Platform",
+          "tech": "Claude API / Telegram / Docker / Linux",
+          "description": "5 specialized AI agents with persistent memory, autonomous scheduling, and Telegram interfaces. 24/7 production system.",
+          "image": "screenshots/multi-agent.jpg",
+          "icon": "🤖",
+          "link": { "label": "View on GitHub", "url": "https://github.com/GeraldYa/kairos" }
+        },
+        {
+          "title": "Polymarket Trading Dashboard",
+          "tech": "Node.js / Express / ethers.js / Android",
+          "description": "Real-time prediction market analytics with multi-account tracking, automated trade execution, and smart-money signal detection.",
+          "image": "screenshots/polymarket.jpg",
+          "icon": "📈",
+          "link": { "label": "View on GitHub", "url": "https://github.com/GeraldYa/polymarket-dashboard" }
+        },
+        {
+          "title": "Toolbox Web Portal",
+          "tech": "Node.js / Express / HTML/CSS/JS",
+          "description": "Unified gateway consolidating 7+ services with health monitoring, dynamic routing, and integrated document preview.",
+          "image": "screenshots/toolbox.jpg",
+          "icon": "🔧",
+          "link": { "label": "View on GitHub", "url": "https://github.com/GeraldYa/toolbox-portal" }
+        },
+        {
+          "title": "E-ink Smart Display",
+          "tech": "Node.js / Canvas / RSS / AI Backgrounds",
+          "description": "IoT dashboard rendering RSS feeds, weather, stocks, and AI-generated backgrounds to e-ink displays.",
+          "image": "screenshots/eink.jpg",
+          "icon": "💻",
+          "link": { "label": "View on GitHub", "url": "https://github.com/GeraldYa/eink-dashboard" }
+        },
+        {
+          "title": "FieldOps — Smart Dispatch",
+          "tech": "Node.js / Express / Leaflet / Scheduling",
+          "description": "AI-powered field service dispatch with route optimization, skill matching, and weather-aware scheduling. Live demo available.",
+          "image": "screenshots/field-dispatch.jpg",
+          "icon": "📍",
+          "links": [
+            { "label": "Live Demo", "url": "https://fieldops.kan-pian.com" },
+            { "label": "GitHub", "url": "https://github.com/GeraldYa/field-dispatch" }
+          ]
+        },
+        {
+          "title": "StoreOps — Retail Dashboard",
+          "tech": "Node.js / Express / Analytics",
+          "description": "Multi-store retail dashboard: P&L tracking, inventory alerts, workforce scheduling across 4 stores. Live demo available.",
+          "image": "screenshots/store-ops.jpg",
+          "icon": "📊",
+          "links": [
+            { "label": "Live Demo", "url": "https://storeops.kan-pian.com" },
+            { "label": "GitHub", "url": "https://github.com/GeraldYa/store-ops" }
+          ]
+        },
+        {
+          "title": "Thought Evolution",
+          "tech": "Python / Gemini API / SQLite",
+          "description": "AI-powered content processing platform. Paste once, publish everywhere — multi-model rewriting with user-tiered access.",
+          "image": "screenshots/thought-evolution.jpg",
+          "icon": "✏️",
+          "link": { "label": "View on GitHub", "url": "https://github.com/GeraldYa/thought-evolution" }
+        },
+        {
+          "title": "ServiceQuote",
+          "tech": "Node.js / Express / AI Pricing",
+          "description": "Service quote generator with product SKU lookup and AI-powered pricing recommendations for field technicians.",
+          "image": "screenshots/geeksquad.jpg",
+          "icon": "🔧",
+          "link": { "label": "View on GitHub", "url": "https://github.com/GeraldYa/service-quote" }
+        },
+        {
+          "title": "Portfolio Template",
+          "tech": "HTML / CSS / JavaScript",
+          "description": "Open-source, single-file developer portfolio template with dark/light theme, 4-language i18n, scroll animations. Zero dependencies.",
+          "image": "screenshots/portfolio-template.jpg",
+          "icon": "📄",
+          "link": { "label": "View on GitHub", "url": "https://github.com/GeraldYa/portfolio-template" }
+        },
+        {
+          "title": "3D Printing & CAD Design",
+          "tech": "Shapr3D / Bambu X1C / MakerWorld",
+          "description": "Original functional designs with 800+ downloads and 296 likes. From Festool tool accessories to desk organizers.",
+          "image": "screenshots/3d-printing.jpg",
+          "icon": "🖨️",
+          "link": { "label": "View on MakerWorld", "url": "https://makerworld.com/@GeraldWorkShop" }
+        }
+      ]
+    },
+    {
+      "type": "writing",
+      "id": "writing",
+      "heading": "Writing",
+      "items": [
+        {
+          "title": "Tokenomic: REPRICED by AI",
+          "description": "Published book (Amazon, Feb 2026). How AI is repricing intelligence, labor, and you. 74 pages.",
+          "image": "screenshots/tokenomic-cover.jpg",
+          "link": { "label": "View on Amazon", "url": "https://a.co/d/04EfeYcG" }
+        },
+        {
+          "title": "How I Built a 5-Agent AI Platform from Scratch",
+          "description": "5 agents, 24/7 uptime, 6 months of accumulated memory. Architecture decisions and what I learned.",
+          "icon": "🔧",
+          "link": { "label": "Read Article", "url": "blog-multi-agent.html" }
+        },
+        {
+          "title": "From Retail Manager to Production Code in 6 Months",
+          "description": "0 to 10 production services in 6 months. No bootcamp, no CS degree. The honest timeline.",
+          "icon": "🚀",
+          "link": { "label": "Read Article", "url": "blog-learning-path.html" }
+        }
+      ]
+    },
+    {
+      "type": "features",
+      "id": "beyond",
+      "heading": "Beyond Code",
+      "items": [
+        { "icon": "🎓", "title": "Tech Communicator", "description": "9+ years explaining complex technology to non-technical customers, coaching teams, and running workshops." },
+        { "icon": "🤝", "title": "Client-Facing Experience", "description": "Thousands of in-home and on-site consultations. I understand what users actually need." },
+        { "icon": "🏆", "title": "Business Operations", "description": "Grew store revenue 100%+ as sole contributor. P&L management, vendor negotiations, team development." },
+        { "icon": "🌐", "title": "Bilingual", "description": "Fluent in English and Mandarin Chinese. Comfortable serving diverse communities." }
+      ]
+    },
+    {
+      "type": "skills",
+      "id": "techstack",
+      "heading": "Tech Stack",
+      "tags": ["Claude API", "Gemini API", "Multi-Agent AI", "Prompt Engineering", "Node.js", "Express", "Python", "REST APIs", "ethers.js", "SQLite", "HTML/CSS/JS", "Android", "ESP-IDF / C", "LVGL", "Docker", "Linux", "systemd", "Cloudflare", "Git/GitHub", "PowerShell"]
+    },
+    {
+      "type": "experience",
+      "id": "work",
+      "heading": "Experience",
+      "items": [
+        { "title": "Geek Squad Field Agent", "org": "Best Buy Canada", "period": "Oct 2022 - Present", "description": "Self-directed field technician. Multi-platform diagnostics, MDM deployment, PowerShell automation. Train and mentor junior technicians." },
+        { "title": "Store Manager", "org": "DF Computer (Apple Authorized Reseller)", "period": "Sep 2018 - Feb 2022", "description": "Grew revenue 100%+ in 12 months. Full P&L management, team coaching, Apple ATLAS certified." },
+        { "title": "Sales Associate / Technician", "org": "DF Computer", "period": "Jul 2015 - Sep 2018", "description": "Front-line sales and technical support. 45% close rate, repeat client base generating 60% of revenue." }
+      ]
+    },
+    {
+      "type": "education",
+      "id": "edu",
+      "heading": "Education",
+      "items": [
+        { "title": "Bachelor of Arts in Economics", "org": "Brock University", "year": "2016" },
+        { "title": "Certifications", "detail": "CompTIA A+ (2023) / Apple ATLAS (Sales & Service)" }
+      ]
+    },
+    {
+      "type": "contact",
+      "id": "connect",
+      "heading": "Let's Connect",
+      "text": "I ship products, explain technology, and solve real problems. If that's what your team needs, let's talk.",
+      "links": [
+        { "label": "Email", "url": "mailto:gerald6331@gmail.com" },
+        { "label": "LinkedIn", "url": "https://www.linkedin.com/in/gerald-yang-ai" },
+        { "label": "GitHub", "url": "https://github.com/GeraldYa" }
+      ]
+    },
+    {
+      "type": "footer",
+      "text": "© 2026 Gerald Yang — Built with purpose."
+    }
+  ]
+}
