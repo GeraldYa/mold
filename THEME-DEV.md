@@ -197,4 +197,55 @@ Core must load first. Theme self-registers on load. Then `render()` uses the reg
 
 ---
 
+## Custom Section Types
+
+The 11 built-in types (hero, stats, cards, etc.) cover most portfolio/personal sites. But you are **not limited to these**.
+
+Register any custom type:
+
+```javascript
+// Define a new section type
+function renderGallery(data) {
+  const section = Mold.el('section', 'mold-section mold-gallery mold-reveal');
+  // Build your gallery DOM...
+  data.images.forEach(img => {
+    section.appendChild(Mold.createImage(img.src, '🖼️', 'gallery-item', 'gallery-img', 'gallery-fallback'));
+  });
+  return section;
+}
+
+// Register it
+Mold.registerSection('gallery', renderGallery);
+```
+
+Then use it in JSON:
+```json
+{
+  "type": "gallery",
+  "id": "photos",
+  "heading": "My Work",
+  "images": [
+    {"src": "photo1.jpg", "caption": "Project A"},
+    {"src": "photo2.jpg", "caption": "Project B"}
+  ]
+}
+```
+
+The core engine doesn't care what the type is called or what data it contains — it just passes the JSON object to your renderer. **You define the schema, you define the rendering.**
+
+Ideas for custom types:
+- `gallery` — image grid/masonry
+- `pricing` — pricing table with tiers
+- `testimonial` — quote cards from clients
+- `video` — embedded video player
+- `faq` — accordion Q&A
+- `map` — embedded map
+- `cta-banner` — full-width call-to-action
+- `logo-wall` — client/partner logos
+- `blog-list` — article previews with dates
+
+No limit on how many types a theme can register.
+
+---
+
 *Mold Theme Development Guide v1.0 — April 2026*
