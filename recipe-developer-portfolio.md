@@ -77,9 +77,7 @@ Generate a COMPLETE, self-contained HTML file. Structure:
 </head>
 <body>
 <div id="mold-root"></div>
-<script>
-/* PASTE FULL mold.js ENGINE HERE */
-</script>
+<script src="https://raw.githubusercontent.com/GeraldYa/mold/main/mold.js"></script>
 <script>
 const page = {/* COMPLETE MOLD JSON FROM USER ANSWERS */};
 Mold.render(page, document.getElementById('mold-root'));
