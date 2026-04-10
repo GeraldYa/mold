@@ -1,10 +1,25 @@
-# Mold — The AI-Native Web Standard
+<p align="center">
+  <img src="screenshots/hero-mockup.jpg" alt="Mold Preview" width="700">
+</p>
 
-> **HTML is for humans. Mold is for AI.**
+<h1 align="center">Mold — The AI-Native Web Standard</h1>
 
-Mold is a JSON-based web page format designed from the ground up for AI. Any AI can create, read, and modify Mold websites through a simple API — using 97% fewer tokens than traditional HTML editing.
+<p align="center">
+  <strong>HTML is for humans. Mold is for AI.</strong>
+</p>
 
-**Live demo:** [moldpage.dev](https://moldpage.dev)
+<p align="center">
+  <a href="https://moldpage.dev"><img src="https://img.shields.io/badge/demo-moldpage.dev-e8976b?style=flat-square" alt="Live Demo"></a>
+  <a href="https://github.com/GeraldYa/mold/stargazers"><img src="https://img.shields.io/github/stars/GeraldYa/mold?style=flat-square&color=e8976b" alt="Stars"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="License"></a>
+  <a href="https://moldpage.dev/themes"><img src="https://img.shields.io/badge/themes-6-9b8ec4?style=flat-square" alt="Themes"></a>
+  <a href="#tested-with"><img src="https://img.shields.io/badge/AI%20models%20tested-5%2F5%20passed-4caf50?style=flat-square" alt="AI Models"></a>
+</p>
+
+<p align="center">
+  Paste one file into any free AI → answer a few questions → get a professional website.<br>
+  No signup. No code. No credit card. <strong>Completely free.</strong>
+</p>
 
 ---
 
@@ -24,179 +39,120 @@ curl -X PUT /api/page/portfolio/section/intro \
 
 **That's it.** No file reading. No parsing. No rewriting. 100 tokens instead of 3,500.
 
+| Metric | Traditional HTML | Mold API |
+|--------|-----------------|----------|
+| Tokens per edit | ~3,500 | ~100 |
+| AI documentation | ~1,700 tokens | ~560 tokens |
+| Cost reduction | — | **97%** |
+
+---
+
+## 6 Themes
+
+Every theme is free. Pick a style, grab the recipe, paste it into any AI.
+
+<table>
+<tr>
+<td align="center" width="33%"><img src="screenshots/preview-golden-hour.jpg" alt="Golden Hour" width="280"><br><strong>Golden Hour</strong><br><sub>Warm · Cinematic · Creative</sub></td>
+<td align="center" width="33%"><img src="screenshots/preview-sterling.jpg" alt="Sterling" width="280"><br><strong>Sterling</strong><br><sub>Navy · Gold · Finance</sub></td>
+<td align="center" width="33%"><img src="screenshots/preview-aurora.jpg" alt="Aurora" width="280"><br><strong>Aurora</strong><br><sub>Cyan · Futuristic · Tech</sub></td>
+</tr>
+<tr>
+<td align="center"><img src="screenshots/preview-bloom.jpg" alt="Bloom" width="280"><br><strong>Bloom</strong><br><sub>Gradient · Magazine · Design</sub></td>
+<td align="center"><img src="screenshots/preview-ink.jpg" alt="Ink" width="280"><br><strong>Ink</strong><br><sub>B&W · Serif · Editorial</sub></td>
+<td align="center"><img src="screenshots/preview-neon.jpg" alt="Neon" width="280"><br><strong>Neon</strong><br><sub>Cyberpunk · Glow · Music</sub></td>
+</tr>
+</table>
+
+**[Browse all themes & moods →](https://moldpage.dev/themes)**
+
 ---
 
 ## How It Works
 
 ```
-┌──────────────┐    ┌──────────────┐    ┌──────────────┐
-│   Any AI     │───▶│   Mold API   │───▶│  mold.js     │
-│  (free tier  │    │  (JSON CRUD) │    │  (renders    │
-│   works)     │◀───│              │    │   in browser)│
-└──────────────┘    └──────────────┘    └──────────────┘
+1. Pick a theme        →  moldpage.dev/themes
+2. Grab the recipe     →  One-click copy
+3. Paste into any AI   →  ChatGPT, Gemini, Grok, Claude — all work
+4. Answer questions    →  Name, projects, skills — AI asks, you answer
+5. Your site is live   →  moldpage.dev/view/your-name
 ```
 
-1. **Mold Schema** — Your website described in clean JSON. No HTML, no CSS.
-2. **Mold Engine** (`mold.js`) — 55KB browser runtime that renders JSON into a beautiful webpage.
-3. **Mold API** — HTTP endpoints for AI to create/read/update/delete anything on the page.
-
----
-
-## Create a Website in 3 Steps
-
-**You don't need to know JSON, APIs, or code.** Just talk to your AI.
-
-### Step 1: Paste the recipe
-Give [`recipe-developer-portfolio.md`](recipe-developer-portfolio.md) to any AI chatbot (ChatGPT, Gemini, Grok, Claude — even free tiers).
-
-### Step 2: Answer questions
-The AI asks your name, title, projects, skills. You answer in plain language.
-
-### Step 3: Get your site
-The AI generates a complete HTML file. Upload to GitHub Pages — your site is live in 2 minutes.
+No registration. No login. No credit card. The AI handles everything.
 
 ---
 
 ## Tested With
 
-| Model | Free? | Correct API call? |
-|-------|-------|--------------------|
-| ChatGPT (free) | ✅ | ✅ First try |
-| Gemini Flash | ✅ | ✅ First try |
-| Grok Flash | ✅ | ✅ First try |
-| Claude Opus | Paid | ✅ First try |
+| AI Model | Status | Cost |
+|----------|--------|------|
+| ChatGPT (Free) | ✅ Pass | Free |
+| Gemini Flash | ✅ Pass | Free |
+| Grok Flash | ✅ Pass | Free |
+| Claude | ✅ Pass | Free |
+| GPT-5 (M365 Copilot) | ✅ Pass | Free |
 
-**4/4 models, 100% success rate.** Even the cheapest AI models can operate Mold perfectly — because the API docs are designed for machines, not humans.
-
----
-
-## Token Economics
-
-| Operation | HTML | Mold | Savings |
-|-----------|------|------|---------|
-| Change a title | ~3,500 tokens | ~100 tokens | **97%** |
-| Read page structure | ~2,400 tokens | ~200 tokens | **92%** |
-| Read API docs | ~1,700 tokens | ~560 tokens | **67%** |
-| Create page from scratch | ~10,000 tokens | ~1,000 tokens | **90%** |
-
-When AI does the building, token cost is the #1 metric. Mold makes every operation 10-35x cheaper.
+**5/5 free AI models passed on first attempt.** The recipe is optimized to work with the cheapest models available.
 
 ---
 
-## Two API Docs — Human + AI
+## Features
 
-Mold ships with two documentation files for the same API:
-
-| | `API-DOCS.md` | `API-AI.md` |
-|---|---|---|
-| For | Humans | AI models |
-| Tokens | ~1,700 | ~560 |
-| Style | Formatted, explained | Compressed, structured |
-| Purpose | Understanding | Execution |
-
-The AI version is 67% smaller. Feed it to a cheap model and it performs like an expensive one.
+- **6 themes** with multiple color moods each
+- **Bilingual** — every page supports i18n (EN/中文 and more)
+- **Visual editor** — edit your page without touching JSON
+- **Theme color picker** — switch moods in the editor
+- **Scroll animations** — 8 entrance animation types
+- **Mobile responsive** — every theme, every device
+- **14 API endpoints** — full CRUD for pages, sections, and items
+- **Recipe system** — AI-optimized templates for each theme
+- **Clone system** — one-click template copying, no AI needed
+- **Edit tokens** — private editing with shareable view URLs
 
 ---
 
-## Built-in Themes
+## API
 
-| Mood | Vibe |
-|------|------|
-| `golden-hour` | Warm amber, twilight, cinematic |
-| `professional-dark` | Dark, purple accent, tech feel |
-| `professional-light` | Clean, editorial, warm |
-| `minimal` | Maximum whitespace |
-| `bold` | High contrast, saturated |
-
-Switch themes with one API call:
 ```bash
-curl -X PUT /api/page/portfolio/meta \
-  -d '{"theme": {"mood": "golden-hour"}}'
+# Create a page
+POST /api/submit         { mold JSON }
+
+# Read
+GET  /api/pages          # List all pages
+GET  /api/page/:id       # Get page JSON
+
+# Update (token-protected)
+PUT  /api/page/:id/section/:sid    # Update a section
+PUT  /api/page/:id/meta            # Update metadata & theme
+
+# Clone
+POST /api/clone          { template, id }
 ```
+
+Full docs: [API-DOCS.md](API-DOCS.md) (human) · [API-AI.md](API-AI.md) (AI-optimized, 560 tokens)
 
 ---
 
-## Section Types
-
-Build pages from 11 composable section types:
-
-| Type | Purpose |
-|------|---------|
-| `hero` | Page header with name, tagline, links |
-| `stats` | Animated number highlights |
-| `timeline` | Career/story timeline with pulse animation |
-| `cards` | Project grid with images, expand/collapse |
-| `skills` | Tag cloud |
-| `experience` | Work history |
-| `education` | Degrees and certifications |
-| `writing` | Blog posts and publications |
-| `features` | Highlight cards with icons |
-| `contact` | CTA with links |
-| `footer` | Page footer |
-
----
-
-## Multi-language (i18n)
-
-Any text field supports instant multi-language:
-
-```json
-// Single language
-"tagline": "Builder. Communicator. Maker."
-
-// Multi-language — engine auto-switches
-"tagline": {
-  "en": "Builder. Communicator. Maker.",
-  "zh": "建造者。沟通者。创客。",
-  "fr": "Créateur. Communicateur. Maker."
-}
-```
-
----
-
-## Free Hosting
-
-**Option 1: GitHub Pages (free, unlimited)**
-1. Save generated HTML as `index.html`
-2. Push to `yourusername.github.io` repo
-3. Enable Pages in Settings
-4. Live in 2 minutes
-
-**Option 2: moldpage.dev (free, first 100 sites)**
-We host it for you. Just send the output.
-
----
-
-## Files
+## Architecture
 
 ```
-mold/
-├── — Core engine served from moldpage.dev (closed source)
-├── themes/
-│   └── golden-hour.theme.js         # Golden Hour theme plugin (43KB)
-├── SPEC.md                          # Schema specification
-├── API-DOCS.md                      # Human-readable API docs
-├── API-AI.md                        # AI-optimized API docs
-├── recipe-developer-portfolio.md    # AI recipe for portfolio creation
-├── example-portfolio.mold.json      # Complete example page
-└── README.md
-```
-
-### Architecture
-
-```
-mold-core.js (engine)     ←  Theme-independent: parsing, DOM, animation, i18n, lightbox
+mold-core.js (engine)      ←  Theme-agnostic: parsing, DOM, animation, i18n, scroll reveal
      ↓
-themes/*.theme.js (plugin) ←  Self-registering: CSS, colors, layouts, section renderers
+themes/*.theme.js (plugin)  ←  Self-registering: CSS, colors, layouts, section renderers
+     ↓
+api/server.js              ←  Express server: CRUD API, view routing, edit panel, clone system
 ```
 
-To create a new theme, write a `your-theme.theme.js` that calls `Mold.registerTheme()` and `Mold.registerSection()`. No changes to core needed.
+Each theme is a single JS file (800-2000 lines) that registers itself with `Mold.registerTheme()` and provides renderers for all 11 section types.
+
+To create a new theme: write `your-theme.theme.js`, register it, done. No changes to core needed.
 
 ---
 
 ## The Thesis
 
 Three waves of digitization:
+
 1. **Paper → Digital files** (computers can store it)
 2. **Text → Vectors** (AI can understand it)
 3. **Interfaces → APIs** (AI can operate it)
@@ -211,7 +167,7 @@ Mold is wave three for the web. When AI does most of the building, the format sh
 
 Built by [Gerald Yang](https://geraldya.github.io) — AI Solutions Builder, author of [Tokenomic: REPRICED by AI](https://a.co/d/04EfeYcG).
 
-Mold was born from building 10 production web services in 6 months and realizing that AI editing HTML is like a Formula 1 car driving on a dirt road. The road needed to change.
+Mold was born from building 10 production web services with AI and realizing that AI editing HTML is like a Formula 1 car driving on a dirt road. The road needed to change.
 
 ---
 
